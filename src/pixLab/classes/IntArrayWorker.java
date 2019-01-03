@@ -79,6 +79,23 @@ public class IntArrayWorker
     System.out.println();
   }
   
+  public int getCount(int numberToFind)
+  {
+	  int count = 0;
+	  for(int[] rowArray : matrix)
+	  {
+		  for(int item : rowArray)
+		  {
+			  if(item == numberToFind)
+			  {
+				  count++;
+			  }
+		  }
+	  }
+	  
+	  return count;
+  }
+  
   
   /** 
    * fill the array with a pattern
