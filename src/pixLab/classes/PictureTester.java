@@ -9,6 +9,14 @@ package pixLab.classes;
  */
 public class PictureTester
 {
+	
+	public static void testGlitch()
+	  {
+	    Picture beach = new Picture("kitten2.jpg");
+	    beach.explore();
+	    beach.glitch();
+	    beach.explore();
+	  }
   /** Method to test zeroBlue */
   public static void testZeroRed()
   {
@@ -40,11 +48,25 @@ public class PictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
-  
+  public static void testMirrorHorizontal()
+  {
+    Picture caterpillar = new Picture("redMotorcycle.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontal();
+    caterpillar.explore();
+  }
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
     Picture temple = new Picture("temple.jpg");
+    temple.explore();
+    temple.mirrorTemple();
+    temple.explore();
+  }
+  
+  public static void testMirrorGull()
+  {
+    Picture temple = new Picture("seagull.jpg");
     temple.explore();
     temple.mirrorTemple();
     temple.explore();
@@ -70,6 +92,7 @@ public class PictureTester
     * method in Java */
   public static void main(String[] args)
   {
+	  testGlitch();
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
@@ -78,13 +101,14 @@ public class PictureTester
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
+    //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-   testMirrorVertical();
+   //testMirrorVertical();
+	  //testMirrorHorizontal();
     //testMirrorTemple();
     //testMirrorArms();
-    //testMirrorGull();
+//    testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
