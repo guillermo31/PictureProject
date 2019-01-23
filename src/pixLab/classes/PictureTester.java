@@ -29,6 +29,7 @@ public class PictureTester
 //	    beach.shiftLeftRight(200);
 	    beach.explore();
 	    beach.glitch();
+	    
 	  }
   /** Method to test zeroBlue */
   public static void testZeroRed()
@@ -101,12 +102,26 @@ public class PictureTester
     swan.explore();
   }
   
+  public static void testSteganography()
+  {
+	  Picture source = new Picture("artWall.jpg");
+	  Picture message = new Picture("hands.jpg");
+	  
+	  source.explore();
+	  message.explore();
+	  source.hidePicture(message);
+	  source.explore();
+	  source.revealPicture();
+	  source.explore();
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
   {
 //	  testChromakey();
-	  testGlitch();
+	  testSteganography();
+//	  testGlitch();
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
