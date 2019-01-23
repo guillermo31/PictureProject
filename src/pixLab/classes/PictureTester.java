@@ -33,14 +33,14 @@ public class PictureTester
   /** Method to test zeroBlue */
   public static void testZeroRed()
   {
-    Picture beach = new Picture("kitten2.jpg");
+    Picture beach = new Picture("panda.jpg");
     beach.explore();
     beach.zeroRed();
     beach.explore();
   }
   public static void testZeroBlue()
   {
-    Picture beach = new Picture("kitten2.jpg");
+    Picture beach = new Picture("panda.jpg");
     beach.explore();
     beach.zeroBlue();
     beach.explore();
@@ -48,7 +48,7 @@ public class PictureTester
   
   public static void testNegate()
   {
-    Picture beach = new Picture("kitten2.jpg");
+    Picture beach = new Picture("panda.jpg");
     beach.explore();
     beach.negative();
     beach.explore();
@@ -110,12 +110,12 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-	//testZeroBlue();
-    //testZeroRed();
+//	testZeroBlue();
+//    testZeroRed();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    //testNegate();
+//    testNegate();
     //testGrayscale();
     //testFixUnderwater();
    //testMirrorVertical();
